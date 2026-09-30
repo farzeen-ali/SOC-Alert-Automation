@@ -1,0 +1,9 @@
+timestamp,user,source_ip,event_type,status,details
+2026-09-30T08:15:01Z,admin,185.220.101.5,FAILED_LOGIN,FAILURE,Invalid password attempt 1
+2026-09-30T08:15:04Z,admin,185.220.101.5,FAILED_LOGIN,FAILURE,Invalid password attempt 2
+2026-09-30T08:15:08Z,admin,185.220.101.5,FAILED_LOGIN,FAILURE,Invalid password attempt 3
+2026-09-30T08:15:12Z,admin,185.220.101.5,FAILED_LOGIN,FAILURE,Invalid password attempt 4
+2026-09-30T08:15:15Z,admin,185.220.101.5,FAILED_LOGIN,FAILURE,Invalid password attempt 5 - Brute Force Suspected
+2026-09-30T08:20:22Z,dev_user,10.0.0.42,SUDO_EXEC,SUCCESS,Executed /usr/bin/python3 suspicious_downloader.py
+2026-09-30T08:25:00Z,db_admin,192.168.1.50,SQL_QUERY,WARNING,SELECT * FROM users WHERE username = 'admin' OR '1'='1'
+2026-09-30T08:30:10Z,john_doe,10.0.0.15,LOGOUT,SUCCESS,Normal session termination

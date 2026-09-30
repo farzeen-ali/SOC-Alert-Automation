@@ -1,0 +1,48 @@
+LEAD:
+Subject:
+[CRITICAL INCIDENT] Emergency Escalation to Lead SOC Architect
+Message:
+ATTENTION LEAD SOC ARCHITECT:
+
+A CRITICAL security threat has been detected in uploaded CSV logs.
+
+Risk Score: {{ JSON.parse($node['AI SOC Triage Engine'].json.text).score }}/100
+Summary: {{ JSON.parse($node['AI SOC Triage Engine'].json.text).summary }}
+Required Action: {{ JSON.parse($node['AI SOC Triage Engine'].json.text).action }}
+
+L2 Analyst:
+Subject:
+[HIGH SEVERITY] Escalation to L2 Threat Analyst
+
+Message:
+ATTENTION L2 THREAT ANALYST:
+
+A HIGH severity threat requires immediate investigation.
+
+Risk Score: {{ JSON.parse($node['AI SOC Triage Engine'].json.text).score }}/100
+Summary: {{ JSON.parse($node['AI SOC Triage Engine'].json.text).summary }}
+Required Action: {{ JSON.parse($node['AI SOC Triage Engine'].json.text).action }}
+
+L1 SOCT Team:
+Subject:
+[MEDIUM SEVERITY] Routed to L1 SOC Triage Team
+
+Message:
+ATTENTION L1 SOC TEAM:
+
+Medium severity activity recorded.
+
+Risk Score: {{ JSON.parse($node['AI SOC Triage Engine'].json.text).score }}/100
+Summary: {{ JSON.parse($node['AI SOC Triage Engine'].json.text).summary }}
+Required Action: {{ JSON.parse($node['AI SOC Triage Engine'].json.text).action }}
+
+ARCHIEVE TEAM:
+Subject:
+[LOW SEVERITY] Automated Security Log Archive Alert
+
+Message:
+LOG ARCHIVE NOTICE:
+
+Low priority activity logged.
+
+Summary: {{ JSON.parse($node['AI SOC Triage Engine'].json.text).summary }}
